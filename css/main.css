@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family:
+  font-family: Georgia;
 }
 
 *,
@@ -13,13 +13,19 @@ img {
 }
 
 body {
-  margin: 1rem
+  margin: 0;
+  justify-content: flex-start;
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
   padding: 1.5rem 1rem;
+  font-family: "Patua One", sans-serif;
+}
+
+.pano {
+  grid-area: banner;
 }
 
 main {
@@ -31,10 +37,18 @@ main {
   gap: 1rem;
 }
 
-.banner {
-  grid-area: banner;
+ul {
+grid-area: banner;
+align-self: end;
+color: #fff;
+padding: 1.5rem 1rem;
 }
 
-.presentation {
+li {
+  display: inline;
+}
 
+h2 {
+  font-family: 'Patua One', sans-serif;
+  color: #30658d;
 }
