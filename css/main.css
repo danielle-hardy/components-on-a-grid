@@ -1,10 +1,13 @@
 html {
   box-sizing: border-box;
   font-family: Georgia;
+  line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -14,7 +17,6 @@ img {
 
 body {
   margin: 0;
-  justify-content: flex-start;
 }
 
 header {
@@ -28,6 +30,27 @@ header {
   grid-area: banner;
 }
 
+.logo {
+  grid-area: banner;
+  grid-column: 1;
+  align-self: end;
+  color: #f2f1ed;
+  width: 14rem;
+}
+
+h1 {
+  grid-area: banner;
+  font-family: "Patua One", sans-serif;
+  font-size: 2
+}
+
+nav {
+  grid-area: banner;
+  grid-column: 2;
+  color: #fff;
+  padding: 1.5rem 1rem;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,18 +60,11 @@ main {
   gap: 1rem;
 }
 
-ul {
-grid-area: banner;
-align-self: end;
-color: #fff;
-padding: 1.5rem 1rem;
-}
-
 li {
   display: inline;
 }
 
 h2 {
-  font-family: 'Patua One', sans-serif;
+  font-family: "Patua One", sans-serif;
   color: #30658d;
 }
